@@ -2,28 +2,27 @@ package Ejercicio2;
 
 /**
  * Clase Videojuego que reperesenta un videojego segun ejercicio
- *  
+ * 
  * <li>String titulo
  * <li>int horas_estimadas
  * <li>boolean entregado
  * <li>String genero
- * <li>String compa�ia;
+ * <li>String compañia;
  * 
  * @author Robert Lopez
  */
 public class Videojuego implements Entregable {
-
 	private String titulo;
 	private int horas_estimadas;
 	private boolean entregado;
 	private String genero;
-	private String compa�ia;
+	private String compañia;
 
 	private final String TITULO_DEF = "";
 	private final int HORAS_ESTIMADAS_DEF = 10;
 	private final boolean ENTREGADO_DEF = false;
 	private final String GENERO_DEF = "";
-	private final String COMPA�IA_DEF = "";
+	private final String COMPAÑIA_DEF = "";
 
 	public final static int MAYOR = 1;
 	public final static int MENOR = -1;
@@ -34,7 +33,7 @@ public class Videojuego implements Entregable {
 		this.horas_estimadas = HORAS_ESTIMADAS_DEF;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = GENERO_DEF;
-		this.compa�ia = COMPA�IA_DEF;
+		this.compañia = COMPAÑIA_DEF;
 	}
 
 	public Videojuego(String titulo, int horas_estimadas) {
@@ -42,15 +41,15 @@ public class Videojuego implements Entregable {
 		this.horas_estimadas = horas_estimadas;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = GENERO_DEF;
-		this.compa�ia = COMPA�IA_DEF;
+		this.compañia = COMPAÑIA_DEF;
 	}
 
-	public Videojuego(String titulo, int horas_estimadas, String genero, String compa�ia) {
+	public Videojuego(String titulo, int horas_estimadas, String genero, String compañia) {
 		this.titulo = titulo;
 		this.horas_estimadas = horas_estimadas;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = genero;
-		this.compa�ia = compa�ia;
+		this.compañia = compañia;
 	}
 
 	public String getTitulo() {
@@ -65,8 +64,8 @@ public class Videojuego implements Entregable {
 		return genero;
 	}
 
-	public String getCompa�ia() {
-		return compa�ia;
+	public String getCompañia() {
+		return compañia;
 	}
 
 	public void setTitulo(String titulo) {
@@ -85,8 +84,33 @@ public class Videojuego implements Entregable {
 		this.genero = genero;
 	}
 
-	public void setCompa�ia(String compa�ia) {
-		this.compa�ia = compa�ia;
+	public void setCompañia(String compañia) {
+		this.compañia = compañia;
+	}
+
+	@Override
+	public String toString() {
+		return "titulo = " + titulo + ", horas estimadas = " + horas_estimadas + "h, entregado = "
+				+ this.estaEntregado() + ", genero = " + genero + ", compañia = " + compañia;
+	}
+
+	/**
+	 * Comprueba el estado de la variable entregado y devuelve una cadena en
+	 * funciÃ³n
+	 * del resultado
+	 * 
+	 * @return String
+	 */
+	public String estaEntregado() {
+		String texto = "";
+
+		if (this.isEntregado()) {
+			texto = "si";
+		} else {
+			texto = "no";
+		}
+
+		return texto;
 	}
 
 	/**
