@@ -1,25 +1,68 @@
 package Ejercicio1;
 
-/* Crearemos una subclase llamada Television con las siguientes características:
- 
-• Sus atributos son resolución (en pulgadas) y sintonizador TDT (booleano), ademas de los atributos heredados.
-• Por defecto, la resolución sera de 20 pulgadas y el sintonizador sera false.
 
-Los constructores que se implementaran serán:
+/**
+ * Clase Television que reperesenta una television según el ejerccio
+ * <li> private double pulgadas
+ * <li> private boolean sintonizador
+ * 
+ * @author Jordi Mallafre
+ */
+public class Television extends Electrodomestico {
+	private double pulgadas;
+	private boolean sintonizador;
 
-✔ Un constructor por defecto.
-✔ Un constructor con el precio y peso. El resto por defecto.
-✔ Un constructor con la resolución, sintonizador TDT y el resto de atributos heredados. 
-Recuerda que debes llamar al constructor de la clase padre.
+	private final double PULGADAS_DEF = 20;
+	private final boolean SINTONIZADOR_DEF = false;
 
-Los métodos que se implementara serán:
+	public Television() {
+		super();
+		this.pulgadas = this.PULGADAS_DEF;
+		this.sintonizador = this.SINTONIZADOR_DEF;
+	}
 
-• Método get de resolución y sintonizador TDT.
-• precioFinal(): si tiene una resolución mayor de 40 pulgadas, se incrementara el precio un 30%
- y si tiene un sintonizador TDT incorporado, aumentara 50 €. 
- 
- Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
-*/
-public class Television {
+	/**
+	 * @param precio
+	 * @param peso
+	 */
+	public Television(double precio, int peso) {
+		super(precio, peso);
+		this.pulgadas = this.PULGADAS_DEF;
+		this.sintonizador = this.SINTONIZADOR_DEF;
+	}
+
+	/**
+	 * @param precio
+	 * @param color
+	 * @param consumo
+	 * @param peso
+	 * @param pulgadas
+	 * @param sintonizador
+	 */
+	public Television(double precio, String color, char consumo, int peso, double pulgadas, boolean sintonizador) {
+		super(precio, color, consumo, peso);
+		this.pulgadas = pulgadas;
+		this.sintonizador = sintonizador;
+	}
+
+	public double getPulgadas() {
+		return pulgadas;
+	}
+
+	public boolean isSintonizador() {
+		return sintonizador;
+	}
+
+	public void precioFinal() {
+
+		if (this.pulgadas > 40) {
+			this.precioBase += (this.precioBase * 0.3);
+		}
+
+		if (this.sintonizador) {
+			this.precioBase += 50;
+		}
+		
+	}
 
 }
