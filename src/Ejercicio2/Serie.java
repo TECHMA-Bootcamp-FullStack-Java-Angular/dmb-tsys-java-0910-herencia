@@ -162,7 +162,7 @@ public class Serie implements Entregable {
 		if (numero_temporadas > objCompared.getNumero_temporadas()) {
 			estado = MAYOR;
 		} else if (numero_temporadas < objCompared.getNumero_temporadas()) {
-			estado = MAYOR;
+			estado = MENOR;
 		}
 
 		return estado;

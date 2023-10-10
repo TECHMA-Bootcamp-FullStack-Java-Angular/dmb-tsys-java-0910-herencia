@@ -18,7 +18,7 @@ public class App {
 		array_series[1] = new Serie("ahsoka", 1);
 		array_series[2] = new Serie("stranger things", 4);
 		array_series[3] = new Serie("pokemon", "Ciencia Ficción", "Satoshi Tajiri", 15);
-		array_series[4] = new Serie("One Piece", "Aventura", "Eiichirō Oda", 20);
+		array_series[4] = new Serie("One Piece", "Aventura", "Eiichiro� Oda", 20);
 
 		entregarVideojuegos(array_videojuegos);
 		entregarSeries(array_series);
