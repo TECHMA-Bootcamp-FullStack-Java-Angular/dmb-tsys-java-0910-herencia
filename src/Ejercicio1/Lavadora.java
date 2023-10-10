@@ -1,24 +1,41 @@
 package Ejercicio1;
-
-/* Crearemos una subclase llamada Lavadora con las siguientes características:
+/**
+ * Subclase Lavadora que pertenece a la clase padre Eletrodomestico
  * 
-• Su atributo es carga, ademas de los atributos heredados.
-• Por defecto, la carga es de 5 kg. Usa una constante para ello.
+ * @author Robert López
+ */
+public class Lavadora extends Electrodomestico {
+	private int carga;
+	private static final int CARGA_POR_DEFECTO = 5;
 
-Los constructores que se implementaran serán:
+	public Lavadora() {
+		super();
+		this.carga = CARGA_POR_DEFECTO;
+	}
 
-✔ Un constructor por defecto.
-✔ Un constructor con el precio y peso. El resto por defecto.
-✔ Un constructor con la carga y el resto de atributos heredados. Recuerda que debes llamar al constructor de la clase padre.
+	public Lavadora(int precioBase, int peso) {
+		super(precioBase, peso);
+		this.carga = CARGA_POR_DEFECTO;
+	}
 
-Los métodos que se implementara serán:
+	public Lavadora(int carga, int precioBase, String color, char consumoEnergetico, int peso) {
+		super(precioBase, color, consumoEnergetico, peso);
+		this.carga = carga;
+	}
 
-• Método get de carga.
-• precioFinal():, si tiene una carga mayor de 30 kg, aumentara el precio 50 €, sino es así no se incrementara el precio. 
+	public int getCarga() {
+		return carga;
+	}
+	
+	/**
+	 * Metodo que calcula si la carga es mayor de 30kg
+	 * 
+	 */
+	public double precioFinal(int carga, double precio) {
+		if (carga > 30) {
+			precio += 50;
+		}
 
-Llama al método padre y añade el código necesario. 
-Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.*/
-
-public class Lavadora {
-
+		return precio;
+	}
 }
