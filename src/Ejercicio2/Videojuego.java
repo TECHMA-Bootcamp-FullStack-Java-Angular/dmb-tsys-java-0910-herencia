@@ -1,13 +1,13 @@
 package Ejercicio2;
 
 /**
- * Clase Videojuego que reperesenta un videojego segun ejerccio
->>>>>>> 67315cf973bdaf340b397d9029aa886149ffc284
+ * Clase Videojuego que reperesenta un videojego segun ejercicio
+ *  
  * <li>String titulo
  * <li>int horas_estimadas
  * <li>boolean entregado
  * <li>String genero
- * <li>String compaï¿½ia;
+ * <li>String compañia;
  * 
  * @author Robert Lopez
  */
@@ -17,13 +17,13 @@ public class Videojuego implements Entregable {
 	private int horas_estimadas;
 	private boolean entregado;
 	private String genero;
-	private String compaÃ±ia;
+	private String compañia;
 
 	private final String TITULO_DEF = "";
 	private final int HORAS_ESTIMADAS_DEF = 10;
 	private final boolean ENTREGADO_DEF = false;
 	private final String GENERO_DEF = "";
-	private final String COMPAÃ‘IA_DEF = "";
+	private final String COMPAÑIA_DEF = "";
 
 	public final static int MAYOR = 1;
 	public final static int MENOR = -1;
@@ -34,7 +34,7 @@ public class Videojuego implements Entregable {
 		this.horas_estimadas = HORAS_ESTIMADAS_DEF;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = GENERO_DEF;
-		this.compaÃ±ia = COMPAÃ‘IA_DEF;
+		this.compañia = COMPAÑIA_DEF;
 	}
 
 	public Videojuego(String titulo, int horas_estimadas) {
@@ -42,15 +42,15 @@ public class Videojuego implements Entregable {
 		this.horas_estimadas = horas_estimadas;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = GENERO_DEF;
-		this.compaÃ±ia = COMPAÃ‘IA_DEF;
+		this.compañia = COMPAÑIA_DEF;
 	}
 
-	public Videojuego(String titulo, int horas_estimadas, String genero, String compaÃ±ia) {
+	public Videojuego(String titulo, int horas_estimadas, String genero, String compañia) {
 		this.titulo = titulo;
 		this.horas_estimadas = horas_estimadas;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = genero;
-		this.compaÃ±ia = compaÃ±ia;
+		this.compañia = compañia;
 	}
 
 	public String getTitulo() {
@@ -65,8 +65,8 @@ public class Videojuego implements Entregable {
 		return genero;
 	}
 
-	public String getCompaÃ±ia() {
-		return compaÃ±ia;
+	public String getCompañia() {
+		return compañia;
 	}
 
 	public void setTitulo(String titulo) {
@@ -85,8 +85,8 @@ public class Videojuego implements Entregable {
 		this.genero = genero;
 	}
 
-	public void setCompaÃ±ia(String compaÃ±ia) {
-		this.compaÃ±ia = compaÃ±ia;
+	public void setCompañia(String compañia) {
+		this.compañia = compañia;
 	}
 
 	/**
