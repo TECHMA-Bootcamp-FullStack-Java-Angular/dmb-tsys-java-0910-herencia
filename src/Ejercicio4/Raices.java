@@ -55,4 +55,15 @@ public class Raices {
         System.out.println("Solucion 2: "+String.format("%.2f",(rta2)));
     }
     
+    /**
+     * Método para obtener una raiz cuando solo tenga una solución posible
+     */
+    private void obtenerRaiz(){
+        
+    	double rta = -b / (2 * a);
+         
+        System.out.println("Solucion: "+String.format("%.2f",(rta)));     
+    }
+    
+    
 }
