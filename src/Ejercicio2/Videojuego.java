@@ -1,15 +1,18 @@
 package Ejercicio2;
 
 /**
- * Clase Videojuego que reperesenta un videojuego según ejerccio
+ * Clase Videojuego que reperesenta un videojego segun ejerccio
+>>>>>>> 67315cf973bdaf340b397d9029aa886149ffc284
  * <li>String titulo
  * <li>int horas_estimadas
  * <li>boolean entregado
  * <li>String genero
- * <li>String compañia;
- * @author Robert López
+ * <li>String compa�ia;
+ * 
+ * @author Robert Lopez
  */
 public class Videojuego implements Entregable {
+
 	private String titulo;
 	private int horas_estimadas;
 	private boolean entregado;
@@ -118,26 +121,25 @@ public class Videojuego implements Entregable {
 		return entregado;
 	}
 
-	
 	/**
 	 * Compara dos series segun su número de temporadas
 	 * 
-	 * @param objeto 
+	 * @param objeto
 	 * @return int (-1,0,1)
 	 * 
-	 *<li>1: La Serie 1 es mayor que la Serie 2</li>
-	 *<li>0: Las Series son iguales</li>
-	 *<li>-1: La Serie 1 es menor que la Serie 2</li>     
+	 *         <li>1: La Serie 1 es mayor que la Serie 2</li>
+	 *         <li>0: Las Series son iguales</li>
+	 *         <li>-1: La Serie 1 es menor que la Serie 2</li>
 	 */
 	@Override
 	public int compareTo(Object a) {
-		int estado = this.IGUAL;
+		int estado = IGUAL;
 
 		Videojuego objCompared = (Videojuego) a;
 		if (this.horas_estimadas > objCompared.getHoras_estimadas()) {
-			estado = this.MAYOR;
+			estado = MAYOR;
 		} else if (this.horas_estimadas < objCompared.getHoras_estimadas()) {
-			estado = this.MENOR;
+			estado = MENOR;
 		}
 
 		return estado;
