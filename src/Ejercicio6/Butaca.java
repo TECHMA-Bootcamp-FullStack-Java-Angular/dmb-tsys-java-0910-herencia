@@ -1,7 +1,7 @@
 package Ejercicio6;
 
 /**
- * Clase Pelicula que reperesenta un pelicula según ejerccio
+ * Clase Pelicula que reperesenta un pelicula segÃºn ejerccio
  *
  * <li>private char letra;
  * <li>private int fila;
@@ -10,7 +10,9 @@ package Ejercicio6;
  *
  * @author Jordi Mallafre
  */
-public class Butaca implements IOcupable{
+
+public class Butaca implements IOcupable {
+
 	private char letra;
 	private int fila;
 	private Espectador espectador; // info del espectador que esta sentado, null si el saiento esta libre vacio

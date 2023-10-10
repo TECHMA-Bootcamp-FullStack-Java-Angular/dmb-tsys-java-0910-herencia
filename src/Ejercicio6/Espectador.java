@@ -92,8 +92,8 @@ public class Espectador implements IEspecatorValidable
 
 	@Override
 	public String toString() {
-		return  nombre + " tiene " + edad + " aÃ±os y su saldo es de " + String.format("%.2f", (dinero)) 
-				+ "â‚¬";
+		return  nombre + " tiene " + edad + " años y su saldo es de " + String.format("%.2f", (dinero)) 
+				+ "€";
 	}
 	
 

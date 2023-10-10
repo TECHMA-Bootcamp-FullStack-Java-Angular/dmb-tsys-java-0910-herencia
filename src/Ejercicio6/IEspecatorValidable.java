@@ -6,7 +6,7 @@ package Ejercicio6;
  * @author David Maza
  */
 public interface IEspecatorValidable {
-	
+
 	/**
 	 * Indica si el espectador tiene dinero suficiente.
 	 * 
@@ -14,7 +14,7 @@ public interface IEspecatorValidable {
 	 * @return boolean según tenga dienro para pagar la entrada o no.
 	 */
 	public boolean tieneDinero(double precioEntrada);
-	
+
 	/**
 	 * Actualizamos el saldo del espactador.
 	 *
@@ -29,7 +29,5 @@ public interface IEspecatorValidable {
 	 * @return boolean según si es mayor o menor que la edad exigida.
 	 */
 	public boolean tieneEdad(int edadMinima);
-
-
 
 }
