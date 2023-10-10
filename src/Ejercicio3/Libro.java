@@ -1,12 +1,11 @@
 package Ejercicio3;
 
 /**
- * Clase Libro que reperesenta un libro según ejerccio
+ * Clase Libro que reperesenta un libro segï¿½n ejerccio
  * <ul>
  * <li>int isbn;
  * <li>String titulo;
  * <li>String autor;
- * <li>String diterctor
  * <li>int num_paginas;
  * 
  *
@@ -61,26 +60,24 @@ public class Libro {
 
 	@Override
 	public String toString() {
-		return "El " + this.titulo + " con el ISBN: " + this.isbn + " creado por el autor " + this.autor + " tiene "
-				+ this.num_paginas + " páginas";
+		return this.titulo + ", con el ISBN (" + this.isbn + ") creado por el autor " + this.autor + " contiene "
+				+ this.num_paginas + " pÃ ginas.";
 	}
 
 	/**
-	 * Compara el número de páginas de el objeto Libro pasado por parametro con el
-	 * actual y en función del resultado muestra un mensaje por consola
+	 * Compara el nÃºmero de pÃ¡ginas de el objeto Libro pasado por parametro con el
+	 * actual y en funciÃ³n del resultado muestra un mensaje por consola
 	 * 
 	 * @param Libro
 	 */
 	public void libroConMasPaguinas(Libro libro) {
 
 		if (this.num_paginas < libro.getNum_paginas()) {
-			System.out.println("El libto con mas páginas es: \n");
-			System.out.println(libro);
+			System.out.println("El libro con mas pÃ ginas es --> "+libro);
 		} else if (this.num_paginas > libro.getNum_paginas()) {
-			System.out.println("El libto con mas páginas es: \n");
-			System.out.println(this.toString());
+			System.out.println("El libro con mas pÃ ginas es --> "+ this.toString());
 		} else {
-			System.out.println("Ambos libros tiene el mismo numero de páginas \n");
+			System.out.println("Ambos libros tiene el mismo numero de pÃ ginas \n");
 			System.out.println(this.toString());
 			System.out.println();
 			System.out.println(libro);

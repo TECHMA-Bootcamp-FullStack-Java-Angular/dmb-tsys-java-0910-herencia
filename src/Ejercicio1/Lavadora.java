@@ -1,5 +1,4 @@
 package Ejercicio1;
-
 /**
  * Subclase Lavadora que pertenece a la clase padre Eletrodomestico
  * 
@@ -39,5 +38,4 @@ public class Lavadora extends Electrodomestico {
 
 		return precio;
 	}
-
 }
