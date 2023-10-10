@@ -22,7 +22,7 @@ public class Raices {
 	 * 
 	 * @return double
 	 */
-	private double getDiscriminante() {
+	public double getDiscriminante() {
 		return Math.pow(b, 2) - (4 * a * c);
 	}
 
@@ -33,7 +33,7 @@ public class Raices {
 	 * @return boolean
 	 */
 
-	private boolean tieneRaices() {
+	public boolean tieneRaices() {
 		return getDiscriminante() > 0;
 	}
 
@@ -42,14 +42,14 @@ public class Raices {
 	 * 
 	 * @return boolean
 	 */
-	private boolean tieneRaiz() {
+	public boolean tieneRaiz() {
 		return getDiscriminante() == 0;
 	}
 
 	/**
 	 * Metodos para obtener las raices cuando hay 2 soluciones posibles
 	 */
-	private void obtenerRaices() {
+	public void obtenerRaices() {
 
 		double rta1 = (-b + Math.sqrt(getDiscriminante())) / (2 * a);
 		double rta2 = (-b - Math.sqrt(getDiscriminante())) / (2 * a);
@@ -61,11 +61,18 @@ public class Raices {
 	/**
 	 * Método para obtener una raiz cuando solo tenga una solución posible
 	 */
-	private void obtenerRaiz() {
+	public void obtenerRaiz() {
 
 		double rta = -b / (2 * a);
 
 		System.out.println("Solucion: " + String.format("%.2f", (rta)));
 	}
+
+	@Override
+	public String toString() {
+		return "a = " + a + ", b = " + b + ", c = " + c;
+	}
+	
+	
 
 }
