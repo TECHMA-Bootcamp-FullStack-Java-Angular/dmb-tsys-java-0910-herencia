@@ -1,7 +1,7 @@
 package Ejercicio2;
 
 /**
- * Clase Pelicula que reperesenta un pelicula segÃºn ejerccio
+ * Clase Serie que reperesenta un serie según ejerccio
  *
  * <li>String titulo
  * <li>boolean entregado
