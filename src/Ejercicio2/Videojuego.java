@@ -1,7 +1,7 @@
 package Ejercicio2;
 
 /**
- * Clase Videojuego que reperesenta un videojego según ejerccio
+ * Clase Videojuego que reperesenta un videojuego según ejerccio
  * <li>String titulo
  * <li>int horas_estimadas
  * <li>boolean entregado
