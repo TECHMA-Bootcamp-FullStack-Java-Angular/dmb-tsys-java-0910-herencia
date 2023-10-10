@@ -1,9 +1,5 @@
 package Ejercicio6;
 
-import ejercicio6.Butaca;
-import ejercicio6.Espectador;
-import ejercicio6.Pelicula;
-
 /**
  * Clase Pelicula que reperesenta un pelicula según ejerccio
  *

@@ -2,12 +2,6 @@ package Ejercicio6;
 
 import java.util.Scanner;
 
-import ejercicio6.Cine;
-import ejercicio6.Espectador;
-import ejercicio6.Pelicula;
-
-import java.util.Scanner;
-
 public class App {
 	
 	public static void main(String[] args) {
