@@ -10,7 +10,7 @@ package Ejercicio6;
  *
  * @author Jordi Mallafre
  */
-public class Butaca implements IOcuplable{
+public class Butaca implements IOcupable {
 	private char letra;
 	private int fila;
 	private Espectador espectador; // info del espectador que esta sentado, null si el saiento esta libre vacio
