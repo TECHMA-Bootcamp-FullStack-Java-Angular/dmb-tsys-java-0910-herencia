@@ -1,18 +1,16 @@
 package Ejercicio2;
 
 /**
- * Clase Videojuego que reperesenta un videojego segun ejerccio
->>>>>>> 67315cf973bdaf340b397d9029aa886149ffc284
+ * Clase Videojuego que reperesenta un videojego según ejerccio
  * <li>String titulo
  * <li>int horas_estimadas
  * <li>boolean entregado
  * <li>String genero
- * <li>String compa�ia;
+ * <li>String compañia;
  * 
  * @author Robert Lopez
  */
 public class Videojuego implements Entregable {
-
 	private String titulo;
 	private int horas_estimadas;
 	private boolean entregado;
@@ -89,6 +87,30 @@ public class Videojuego implements Entregable {
 		this.compañia = compañia;
 	}
 
+	@Override
+	public String toString() {
+		return "titulo = " + titulo + ", horas estimadas = " + horas_estimadas + "h, entregado = "
+				+ this.estaEntregado() + ", genero = " + genero + ", compañia = " + compañia;
+	}
+	
+	/**
+	 * Comprueba el estado de la variable entregado y devuelve una cadena en funciÃ³n
+	 * del resultado
+	 * 
+	 * @return String
+	 */
+	public String estaEntregado() {
+		String texto = "";
+
+		if (this.isEntregado()) {
+			texto = "si";
+		} else {
+			texto = "no";
+		}
+
+		return texto;
+	}
+
 	/**
 	 * Cambia el contenido de la variable entregado a true
 	 *
@@ -121,25 +143,26 @@ public class Videojuego implements Entregable {
 		return entregado;
 	}
 
+	
 	/**
 	 * Compara dos series segun su número de temporadas
 	 * 
-	 * @param objeto
+	 * @param objeto 
 	 * @return int (-1,0,1)
 	 * 
-	 *         <li>1: La Serie 1 es mayor que la Serie 2</li>
-	 *         <li>0: Las Series son iguales</li>
-	 *         <li>-1: La Serie 1 es menor que la Serie 2</li>
+	 *<li>1: La Serie 1 es mayor que la Serie 2</li>
+	 *<li>0: Las Series son iguales</li>
+	 *<li>-1: La Serie 1 es menor que la Serie 2</li>     
 	 */
 	@Override
 	public int compareTo(Object a) {
-		int estado = IGUAL;
+		int estado = this.IGUAL;
 
 		Videojuego objCompared = (Videojuego) a;
 		if (this.horas_estimadas > objCompared.getHoras_estimadas()) {
-			estado = MAYOR;
+			estado = this.MAYOR;
 		} else if (this.horas_estimadas < objCompared.getHoras_estimadas()) {
-			estado = MENOR;
+			estado = this.MENOR;
 		}
 
 		return estado;
