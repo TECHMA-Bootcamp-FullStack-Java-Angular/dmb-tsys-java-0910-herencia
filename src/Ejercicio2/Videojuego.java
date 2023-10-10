@@ -87,6 +87,30 @@ public class Videojuego implements Entregable {
 		this.compañia = compañia;
 	}
 
+	@Override
+	public String toString() {
+		return "titulo = " + titulo + ", horas estimadas = " + horas_estimadas + "h, entregado = "
+				+ this.estaEntregado() + ", genero = " + genero + ", compañia = " + compañia;
+	}
+	
+	/**
+	 * Comprueba el estado de la variable entregado y devuelve una cadena en funciÃ³n
+	 * del resultado
+	 * 
+	 * @return String
+	 */
+	public String estaEntregado() {
+		String texto = "";
+
+		if (this.isEntregado()) {
+			texto = "si";
+		} else {
+			texto = "no";
+		}
+
+		return texto;
+	}
+
 	/**
 	 * Cambia el contenido de la variable entregado a true
 	 *
