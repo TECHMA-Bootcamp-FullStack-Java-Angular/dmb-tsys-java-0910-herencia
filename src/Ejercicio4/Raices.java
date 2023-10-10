@@ -62,10 +62,8 @@ public class Raices {
         
     	double rta = -b / (2 * a);
          
-        System.out.println("Solucion 1: "+String.format("%.2f",(rta1)));     
+        System.out.println("Solucion: "+String.format("%.2f",(rta)));     
     }
-    
-    
     
     
 }
