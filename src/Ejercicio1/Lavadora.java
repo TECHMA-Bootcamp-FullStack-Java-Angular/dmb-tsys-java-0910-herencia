@@ -19,6 +19,6 @@ Los métodos que se implementara serán:
 Llama al método padre y añade el código necesario. 
 Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.*/
 
-public class Labadora {
+public class Lavadora {
 
 }
