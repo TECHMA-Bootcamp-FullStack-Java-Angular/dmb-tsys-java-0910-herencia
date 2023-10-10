@@ -1,26 +1,27 @@
 package Ejercicio2;
 
 /**
- * Clase Videojuego que reperesenta un videojego segÃºn ejerccio
+ * Clase Videojuego que reperesenta un videojego según ejerccio
  * <li>String titulo
  * <li>int horas_estimadas
  * <li>boolean entregado
  * <li>String genero
- * <li>String compaÃ±ia;
- * @author Robert LÃ³pez
+ * <li>String compañia;
+ * 
+ * @author Robert Lopez
  */
 public class Videojuego implements Entregable {
 	private String titulo;
 	private int horas_estimadas;
 	private boolean entregado;
 	private String genero;
-	private String compaÃ±ia;
+	private String compañia;
 
 	private final String TITULO_DEF = "";
 	private final int HORAS_ESTIMADAS_DEF = 10;
 	private final boolean ENTREGADO_DEF = false;
 	private final String GENERO_DEF = "";
-	private final String COMPAÃ‘IA_DEF = "";
+	private final String COMPAÑIA_DEF = "";
 
 	public final static int MAYOR = 1;
 	public final static int MENOR = -1;
@@ -31,7 +32,7 @@ public class Videojuego implements Entregable {
 		this.horas_estimadas = HORAS_ESTIMADAS_DEF;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = GENERO_DEF;
-		this.compaÃ±ia = COMPAÃ‘IA_DEF;
+		this.compañia = COMPAÑIA_DEF;
 	}
 
 	public Videojuego(String titulo, int horas_estimadas) {
@@ -39,15 +40,15 @@ public class Videojuego implements Entregable {
 		this.horas_estimadas = horas_estimadas;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = GENERO_DEF;
-		this.compaÃ±ia = COMPAÃ‘IA_DEF;
+		this.compañia = COMPAÑIA_DEF;
 	}
 
-	public Videojuego(String titulo, int horas_estimadas, String genero, String compaÃ±ia) {
+	public Videojuego(String titulo, int horas_estimadas, String genero, String compañia) {
 		this.titulo = titulo;
 		this.horas_estimadas = horas_estimadas;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = genero;
-		this.compaÃ±ia = compaÃ±ia;
+		this.compañia = compañia;
 	}
 
 	public String getTitulo() {
@@ -62,8 +63,8 @@ public class Videojuego implements Entregable {
 		return genero;
 	}
 
-	public String getCompaÃ±ia() {
-		return compaÃ±ia;
+	public String getCompañia() {
+		return compañia;
 	}
 
 	public void setTitulo(String titulo) {
@@ -82,8 +83,8 @@ public class Videojuego implements Entregable {
 		this.genero = genero;
 	}
 
-	public void setCompaÃ±ia(String compaÃ±ia) {
-		this.compaÃ±ia = compaÃ±ia;
+	public void setCompañia(String compañia) {
+		this.compañia = compañia;
 	}
 
 	/**
@@ -120,7 +121,7 @@ public class Videojuego implements Entregable {
 
 	
 	/**
-	 * Compara dos series segun su nÃºmero de temporadas
+	 * Compara dos series segun su número de temporadas
 	 * 
 	 * @param objeto 
 	 * @return int (-1,0,1)
