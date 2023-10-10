@@ -1,26 +1,28 @@
 package Ejercicio2;
 
 /**
- * Clase Videojuego que reperesenta un videojego según ejerccio
+ * Clase Videojuego que reperesenta un videojego segun ejerccio
  * <li>String titulo
  * <li>int horas_estimadas
  * <li>boolean entregado
  * <li>String genero
- * <li>String compañia;
- * @author Robert López
+ * <li>String compa�ia;
+ * 
+ * @author Robert Lopez
  */
 public class Videojuego implements Entregable {
+
 	private String titulo;
 	private int horas_estimadas;
 	private boolean entregado;
 	private String genero;
-	private String compañia;
+	private String compa�ia;
 
 	private final String TITULO_DEF = "";
 	private final int HORAS_ESTIMADAS_DEF = 10;
 	private final boolean ENTREGADO_DEF = false;
 	private final String GENERO_DEF = "";
-	private final String COMPAÑIA_DEF = "";
+	private final String COMPA�IA_DEF = "";
 
 	public final static int MAYOR = 1;
 	public final static int MENOR = -1;
@@ -31,7 +33,7 @@ public class Videojuego implements Entregable {
 		this.horas_estimadas = HORAS_ESTIMADAS_DEF;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = GENERO_DEF;
-		this.compañia = COMPAÑIA_DEF;
+		this.compa�ia = COMPA�IA_DEF;
 	}
 
 	public Videojuego(String titulo, int horas_estimadas) {
@@ -39,15 +41,15 @@ public class Videojuego implements Entregable {
 		this.horas_estimadas = horas_estimadas;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = GENERO_DEF;
-		this.compañia = COMPAÑIA_DEF;
+		this.compa�ia = COMPA�IA_DEF;
 	}
 
-	public Videojuego(String titulo, int horas_estimadas, String genero, String compañia) {
+	public Videojuego(String titulo, int horas_estimadas, String genero, String compa�ia) {
 		this.titulo = titulo;
 		this.horas_estimadas = horas_estimadas;
 		this.entregado = ENTREGADO_DEF;
 		this.genero = genero;
-		this.compañia = compañia;
+		this.compa�ia = compa�ia;
 	}
 
 	public String getTitulo() {
@@ -62,8 +64,8 @@ public class Videojuego implements Entregable {
 		return genero;
 	}
 
-	public String getCompañia() {
-		return compañia;
+	public String getCompa�ia() {
+		return compa�ia;
 	}
 
 	public void setTitulo(String titulo) {
@@ -82,8 +84,8 @@ public class Videojuego implements Entregable {
 		this.genero = genero;
 	}
 
-	public void setCompañia(String compañia) {
-		this.compañia = compañia;
+	public void setCompa�ia(String compa�ia) {
+		this.compa�ia = compa�ia;
 	}
 
 	/**
@@ -118,26 +120,25 @@ public class Videojuego implements Entregable {
 		return entregado;
 	}
 
-	
 	/**
 	 * Compara dos series segun su número de temporadas
 	 * 
-	 * @param objeto 
+	 * @param objeto
 	 * @return int (-1,0,1)
 	 * 
-	 *<li>1: La Serie 1 es mayor que la Serie 2</li>
-	 *<li>0: Las Series son iguales</li>
-	 *<li>-1: La Serie 1 es menor que la Serie 2</li>     
+	 *         <li>1: La Serie 1 es mayor que la Serie 2</li>
+	 *         <li>0: Las Series son iguales</li>
+	 *         <li>-1: La Serie 1 es menor que la Serie 2</li>
 	 */
 	@Override
 	public int compareTo(Object a) {
-		int estado = this.IGUAL;
+		int estado = IGUAL;
 
 		Videojuego objCompared = (Videojuego) a;
 		if (this.horas_estimadas > objCompared.getHoras_estimadas()) {
-			estado = this.MAYOR;
+			estado = MAYOR;
 		} else if (this.horas_estimadas < objCompared.getHoras_estimadas()) {
-			estado = this.MENOR;
+			estado = MENOR;
 		}
 
 		return estado;
