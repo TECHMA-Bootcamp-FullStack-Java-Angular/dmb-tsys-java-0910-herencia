@@ -1,6 +1,6 @@
 package Ejercicio5;
 
-public class Alumno {
+public class Estudiante {
 	
 	// He tenido que crer este atributo para tener acceso desde el profesor. (David)
 	
