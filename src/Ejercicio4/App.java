@@ -49,7 +49,7 @@ public class App {
 	 * Imprime por consola diferentes textos
 	 */
 	public static void mostrarMenu() {
-		System.out.println("1) Escribe los valores con los que calcular la ecuaciÃ³n");
+		System.out.println("1) Escribe los valores con los que calcular la ecuacion");
 		System.out.println("2) Mostrar ejemplos de ecuaciones");
 		System.out.println("3) Salir");
 	}
@@ -80,7 +80,7 @@ public class App {
 	}
 
 	/**
-	 * Comprueba si la informaciÃ³n transmitida por el usuario es un número, en
+	 * Comprueba si la información transmitida por el usuario es un número, en
 	 * caso afirmativo lo devuelve.
 	 * 
 	 * @param texto

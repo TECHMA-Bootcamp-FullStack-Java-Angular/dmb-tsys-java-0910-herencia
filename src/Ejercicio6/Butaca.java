@@ -1,7 +1,7 @@
 package Ejercicio6;
 
 /**
- * Clase Pelicula que reperesenta un pelicula según ejerccio
+ * Clase Butaca que reperesenta una butaca según ejercicio
  *
  * <li>private char letra;
  * <li>private int fila;
