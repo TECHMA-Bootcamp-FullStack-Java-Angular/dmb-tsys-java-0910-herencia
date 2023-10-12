@@ -2,6 +2,13 @@ package Ejercicio5;
 
 import java.util.Random;
 
+/**
+ * Clase repersenta a un profesor
+ * 
+ * <li>private String materia
+ * 
+ * @author David Maza
+ */
 class Profesor extends Persona {
     private String materia;
 
