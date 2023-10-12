@@ -8,13 +8,13 @@ public class App {
 
 		Pelicula pelicula = new Pelicula(pelisList[randomRange(0, pelisList.length - 1)], randomRange(90, 240), 
 				randomRange(12, 18),
-				"D. Jose Marín");
+				"D. Jose Marï¿½n");
 
 		System.out.println("\n**************** " + orange("CINES BOOTCAMP TEAM 4") + " *******************\n");
 
-		int filas = askValueNumeric("Cantidad de filas que tendrá la Sala: ");
+		int filas = askValueNumeric("Cantidad de filas que tendrÃ¡ la Sala: ");
 
-		int columnas = askValueNumeric("Cantidad de columnas que tendrá la Sala: ");
+		int columnas = askValueNumeric("Cantidad de columnas que tendrÃ¡ la Sala: ");
 
 		double precio = askPrice("Precio de la entrada al cine: ");
 
@@ -59,14 +59,14 @@ public class App {
 
 		}
 
-		cine.showPrint(); // Mostramos la información de sala
+		cine.showPrint(); // Mostramos la informaciï¿½n de sala
 	}
 
 	static Scanner sc = new Scanner(System.in);
 
 	// Mock datos pelis
 	private static final String pelisList[] = { "BootCamp Killer", "La pesadilla del Codigo Maldito",
-			"El código Contrataca", "Que paso? si esto antes compilaba" };
+			"El cï¿½digo Contrataca", "Que paso? si esto antes compilaba" };
 
 	// Mock datos espectadores
 	private static final String espectadoresList[] = { "Asier", "Carla", "Jordi", "Toni", "Manel", "Feli", "Ivan", "Jan",
@@ -105,7 +105,7 @@ public class App {
 			try {
 				res = Double.valueOf(resString);
 			} catch (NumberFormatException nfe) {
-				System.err.println("Debes introducir un precio válido");
+				System.err.println("Debes introducir un precio vÃ¡lido");
 			}
 		}
 		return res;

@@ -1,7 +1,7 @@
 package Ejercicio6;
 
 /**
- * Clase Pelicula que reperesenta un pelicula segÃºn ejerccio
+ * Clase Pelicula que reperesenta un pelicula según ejerccio
  *
  * <li>private char letra;
  * <li>private int fila;

@@ -1,7 +1,7 @@
 package Ejercicio6;
 
 /**
- * Clase Pelicula que reperesenta un pelicula según ejerccio
+ * Clase Pelicula que reperesenta un pelicula segun ejerccio
  *
  * <li>private Butaca butacas[][];
  * <li>private double precio;
@@ -124,14 +124,14 @@ public class Cine {
 	}
 
 	/**
-	 * Muestra toda la información de nuestra sala
+	 * Muestra toda la informacion de nuestra sala
 	 */
 	public void showPrint() {
 
-		// Muesta info Película
+		// Muesta info Pelucula
 		hr();
 		System.out.println(pelicula);
-		System.out.println("Precio entrada: " + precio + ".€");
+		System.out.println("Precio entrada: " + precio + ".â‚¬");
 		hr();
 
 		// Muesta info de cada butaca
