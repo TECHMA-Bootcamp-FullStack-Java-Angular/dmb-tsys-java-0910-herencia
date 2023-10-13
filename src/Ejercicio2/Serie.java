@@ -1,7 +1,7 @@
 package Ejercicio2;
 
 /**
- * Clase Serie que reperesenta un serie según ejerccio
+ * Clase Serie que reperesenta un serie segï¿½n ejerccio
  *
  * <li>String titulo
  * <li>boolean entregado
@@ -89,12 +89,12 @@ public class Serie implements Entregable {
 	
 	@Override
 	public String toString() {
-		return "titulo = " + titulo + ", número de temporadas = " + numero_temporadas + ", entregado = "
+		return "titulo = " + titulo + ", numero de temporadas = " + numero_temporadas + ", entregado = "
 				+ this.estaEntregado() + ", genero = " + genero + ", creador = " + diterctor;
 	}
 
 	/**
-	 * Comprueba el estado de la variable entregado y devuelve una cadena en función
+	 * Comprueba el estado de la variable entregado y devuelve una cadena en funciï¿½n
 	 * del resultado
 	 * 
 	 * @return String
@@ -145,7 +145,7 @@ public class Serie implements Entregable {
 
 	
 	/**
-	 * Compara dos series segun su número de temporadas
+	 * Compara dos series segun su nï¿½mero de temporadas
 	 * 
 	 * @param objeto 
 	 * @return int (-1,0,1)

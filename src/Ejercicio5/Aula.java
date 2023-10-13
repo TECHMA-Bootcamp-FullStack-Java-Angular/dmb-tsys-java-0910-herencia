@@ -56,6 +56,7 @@ class Aula {
 	 * 
 	 * @param profesor
 	 */
+
     public void asignarProfessor(Profesor profesor) {
         if (profesor != null && profesor.getMateria().equals(materiaDestinada)) {
             this.profesor = profesor;
@@ -107,6 +108,7 @@ class Aula {
 	 * @param profesores
 	 * @return ArrayList<Aula>
 	 */
+
     public static ArrayList<Aula> crearAulas(String[] materias, ArrayList<Estudiante> estudiantes, ArrayList<Profesor> profesores)
     {
         Random random = new Random();
@@ -133,6 +135,7 @@ class Aula {
 		}
     	return aulas;
     }
+    
 
 	/**
 	 * Muestra por consola toda la información de las aulas creadas
@@ -155,16 +158,8 @@ class Aula {
 
     			for (Estudiante estudiante : aula.getEstudiantes()) {
     				System.out.println("Nombre: " + estudiante.getNombre());
-    				System.out.println("CalificaciÃ³n: " + estudiante.getCalificacionFormateada());
-    				System.out.println("Hace Novillos: " + (estudiante.faltar() ? "SÃ­" : "No"));
-
-    			
-
-    			for (Estudiante estudiante : aula.getEstudiantes()) {
-    				System.out.println("Nombre: " + estudiante.getNombre());
     				System.out.println("Calificación: " + estudiante.getCalificacionFormateada());
-    				System.out.println("Hace Novillos: " + (estudiante.faltar() ? "SI­" : "No"));
-
+    				System.out.println("Hace Novillos: " + (estudiante.faltar() ? "Sí" : "No"));
     				System.out.println("----------------------------------------");
     			}
 
@@ -181,4 +176,6 @@ class Aula {
     	}
     }
 
-}
+ }
+
+

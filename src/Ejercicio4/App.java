@@ -80,7 +80,7 @@ public class App {
 	}
 
 	/**
-	 * Comprueba si la información transmitida por el usuario es un número, en
+	 * Comprueba si la informaciï¿½n transmitida por el usuario es un nï¿½mero, en
 	 * caso afirmativo lo devuelve.
 	 * 
 	 * @param texto
@@ -100,7 +100,7 @@ public class App {
 				condition = !condition;
 			} catch (Exception e) {
 				System.out.println();
-				System.out.println("Has de escribir un número");
+				System.out.println("Has de escribir un nï¿½mero");
 			}
 		}
 
@@ -121,7 +121,7 @@ public class App {
 		} else if (raiz.tieneRaices()) {
 			raiz.obtenerRaices();
 		} else {
-			System.out.println("La ecuación de 2 grado no tiene solución");
+			System.out.println("La ecuacion de 2 grado no tiene solucion");
 		}
 	}
 
@@ -135,17 +135,17 @@ public class App {
 		Raices raiz_sin_soluciones = new Raices(1, 2, 5);
 
 		separador();
-		System.out.println("Este es un ejemplo de ecuación de segundo grado con dos soluciones");
+		System.out.println("Este es un ejemplo de ecuacion de segundo grado con dos soluciones");
 		System.out.println();
 		calcular(raiz_dos_soluciones);
 
 		separador();
-		System.out.println("Este es un ejemplo de ecuación de segundo grado con una solucion");
+		System.out.println("Este es un ejemplo de ecuacion de segundo grado con una solucion");
 		System.out.println();
 		calcular(raiz_una_solucion);
 
 		separador();
-		System.out.println("Este es un ejemplo de ecuación de segundo grado sin solucion");
+		System.out.println("Este es un ejemplo de ecuacion de segundo grado sin solucion");
 		System.out.println();
 		calcular(raiz_sin_soluciones);
 	}
