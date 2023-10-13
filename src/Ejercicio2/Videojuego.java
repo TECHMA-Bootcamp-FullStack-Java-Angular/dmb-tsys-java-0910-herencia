@@ -1,18 +1,17 @@
 package Ejercicio2;
 
 /**
- * Clase Videojuego que reperesenta un videojego segun ejerccio
->>>>>>> 67315cf973bdaf340b397d9029aa886149ffc284
+ * Clase Videojuego que reperesenta un videojego segun ejercicio
+ * 
  * <li>String titulo
  * <li>int horas_estimadas
  * <li>boolean entregado
  * <li>String genero
- * <li>String compa�ia;
+ * <li>String compañia;
  * 
  * @author Robert López
  */
 public class Videojuego implements Entregable {
-
 	private String titulo;
 	private int horas_estimadas;
 	private boolean entregado;
@@ -87,6 +86,31 @@ public class Videojuego implements Entregable {
 
 	public void setCompañia(String compañia) {
 		this.compañia = compañia;
+	}
+
+	@Override
+	public String toString() {
+		return "titulo = " + titulo + ", horas estimadas = " + horas_estimadas + "h, entregado = "
+				+ this.estaEntregado() + ", genero = " + genero + ", compañia = " + compañia;
+	}
+
+	/**
+	 * Comprueba el estado de la variable entregado y devuelve una cadena en
+	 * funciÃ³n
+	 * del resultado
+	 * 
+	 * @return String
+	 */
+	public String estaEntregado() {
+		String texto = "";
+
+		if (this.isEntregado()) {
+			texto = "si";
+		} else {
+			texto = "no";
+		}
+
+		return texto;
 	}
 
 	/**

@@ -86,6 +86,30 @@ public class Serie implements Entregable {
 	public void setNumero_temporadas(int numero_temporadas) {
 		this.numero_temporadas = numero_temporadas;
 	}
+	
+	@Override
+	public String toString() {
+		return "titulo = " + titulo + ", número de temporadas = " + numero_temporadas + ", entregado = "
+				+ this.estaEntregado() + ", genero = " + genero + ", creador = " + diterctor;
+	}
+
+	/**
+	 * Comprueba el estado de la variable entregado y devuelve una cadena en función
+	 * del resultado
+	 * 
+	 * @return String
+	 */
+	public String estaEntregado() {
+		String texto = "";
+
+		if (this.isEntregado()) {
+			texto = "si";
+		} else {
+			texto = "no";
+		}
+
+		return texto;
+	}
 
 	/**
 	 * Cambia el contenido de la variable entregado a true
@@ -138,7 +162,7 @@ public class Serie implements Entregable {
 		if (numero_temporadas > objCompared.getNumero_temporadas()) {
 			estado = MAYOR;
 		} else if (numero_temporadas < objCompared.getNumero_temporadas()) {
-			estado = MAYOR;
+			estado = MENOR;
 		}
 
 		return estado;
