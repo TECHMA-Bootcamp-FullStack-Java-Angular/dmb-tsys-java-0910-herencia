@@ -9,7 +9,7 @@ package Ejercicio2;
  * <li>String genero
  * <li>String compañia;
  * 
- * @author Robert Lopez
+ * @author Robert López
  */
 public class Videojuego implements Entregable {
 	private String titulo;
