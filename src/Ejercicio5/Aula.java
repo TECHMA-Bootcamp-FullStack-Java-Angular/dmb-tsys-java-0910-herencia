@@ -1,6 +1,7 @@
 package Ejercicio5;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -128,7 +129,7 @@ class Aula {
     }
     
 	/**
-	 * Muestra por consola toda la informaciÃ³n de las aulas creadas
+	 * Muestra por consola toda la información de las aulas creadas
 	 * @param aulas
 	 */
     public static void mostrarAulas(ArrayList<Aula> aulas)
@@ -143,11 +144,12 @@ class Aula {
     			System.out.println("---------------------------------------");
     			System.out.println("Estudiantes que asistieron:");
     			System.out.println("---------------------------------------");
+    			
 
     			for (Estudiante estudiante : aula.getEstudiantes()) {
     				System.out.println("Nombre: " + estudiante.getNombre());
-    				System.out.println("CalificaciÃ³n: " + estudiante.getCalificacionFormateada());
-    				System.out.println("Hace Novillos: " + (estudiante.faltar() ? "SÃ­" : "No"));
+    				System.out.println("Calificación: " + estudiante.getCalificacionFormateada());
+    				System.out.println("Hace Novillos: " + (estudiante.faltar() ? "SI­" : "No"));
     				System.out.println("----------------------------------------");
     			}
 
@@ -163,3 +165,4 @@ class Aula {
     		}
     	}
     }
+}
