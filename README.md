@@ -1,7 +1,8 @@
 <div align="center"><img width="80%"  src="https://talento.edempleo.com/wp-content/uploads/2021/05/Fundacion_esplai.png"  alt="Logo BootCamp" /></div>
 
 # BootCamp T-Systems
-<hr>
+
+----
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Made+with+love+by+TEAM+4++)](https://git.io/typing-svg)
 
@@ -13,12 +14,14 @@ Este repositorio contiene las tareas del Bootcamp 👨‍💻
 
 Puedes acceder a cada uno de los ejercicios haciendo clic en el siguiente enlaces:
 
-- [Ver ejecicio 1](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio1)
-- [Ver ejecicio 2](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio2)
-- [Ver ejecicio 3](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio3)
-- [Ver ejecicio 4](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio4)
-- [Ver ejecicio 5](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio5)
-- [Ver ejecicio 6](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio6)
+Repositorios 🖥️ | Diagramas 📅
+------------- | -------------
+[Ejecicio 1](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio1)  | [Diagrama 1](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio1/doc/Ejercicio1.pdf)
+[Ejecicio 2](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio2)  | [Diagrama 2](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio6/docs/Actividad_02.pdf)
+[Ejecicio 3](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio3)  | 
+[Ejecicio 4](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio4)  | 
+[Ejecicio 5](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio5)  | 
+[Ejecicio 6](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio6)  | [Diagrama 6](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio6/doc/Ejercicio6.pdf)
 
 
 ## Nuestros consejos:
@@ -308,7 +311,7 @@ Los datos del espectador y la película pueden ser totalmente aleatorios.
 ## Authors 
 
 - [Jordi Mallafre](https://github.com/jordimall) 
-- [Roeberto Lopez](https://github.com/robertiki2001)
+- [Roberto Lopez](https://github.com/robertiki2001)
 - [David Maza](https://github.com/d-maza)
 
 
