@@ -15,7 +15,7 @@ import java.util.Random;
 class Profesor extends Persona {
 	
     private String materia;
-    private static Random random = new Random();
+    static Random random = new Random();
 
     public Profesor(String nombre, int edad, String sexo, String materia) {
         super(nombre, edad, sexo);
