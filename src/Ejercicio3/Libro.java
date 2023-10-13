@@ -61,7 +61,7 @@ public class Libro {
 	@Override
 	public String toString() {
 		return this.titulo + ", con el ISBN (" + this.isbn + ") creado por el autor " + this.autor + " contiene "
-				+ this.num_paginas + " pàginas.";
+				+ this.num_paginas + " paginas.";
 	}
 
 	/**
@@ -73,11 +73,11 @@ public class Libro {
 	public void libroConMasPaguinas(Libro libro) {
 
 		if (this.num_paginas < libro.getNum_paginas()) {
-			System.out.println("El libro con mas pàginas es --> "+libro);
+			System.out.println("El libro con mas paginas es --> "+libro);
 		} else if (this.num_paginas > libro.getNum_paginas()) {
-			System.out.println("El libro con mas pàginas es --> "+ this.toString());
+			System.out.println("El libro con mas paginas es --> "+ this.toString());
 		} else {
-			System.out.println("Ambos libros tiene el mismo numero de pàginas \n");
+			System.out.println("Ambos libros tiene el mismo numero de paginas \n");
 			System.out.println(this.toString());
 			System.out.println();
 			System.out.println(libro);

@@ -1,18 +1,36 @@
 package Ejercicio5;
 
-public class Persona {
-	
-	protected String nombre;
-	protected int edad;
-	protected String sexo;
-	protected int calificacion;
-	
-	public Persona(String nombre, int edad, String sexo, int calificacion) {
 
-		this.nombre = nombre;
-		this.edad = edad;
-		this.sexo = sexo;
-		this.calificacion = calificacion;
-	}
+/**
+ * Clase repersenta a un Estudiante
+ * 
+ * <li>private String materia
+ * <li>private int edad
+ * <li>private String sexo
+ * 
+ * @author David Maza
+ */
+class Persona {
 	
+    private String nombre;
+    private int edad;
+    private String sexo;
+
+    public Persona(String nombre, int edad, String sexo) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
 }
