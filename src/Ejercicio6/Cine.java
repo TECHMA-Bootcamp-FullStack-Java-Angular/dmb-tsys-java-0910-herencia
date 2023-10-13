@@ -131,7 +131,7 @@ public class Cine {
 		// Muesta info Pelucula
 		hr();
 		System.out.println(pelicula);
-		System.out.println("Precio entrada: " + precio + ".â‚¬");
+		System.out.println("Precio entrada: " + precio + "€");
 		hr();
 
 		// Muesta info de cada butaca

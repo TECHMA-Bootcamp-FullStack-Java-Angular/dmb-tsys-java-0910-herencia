@@ -10,12 +10,12 @@ public class App {
 		ArrayList<Profesor> profesores = new ArrayList<>();
 		ArrayList<Aula> aulas = new ArrayList<>();
 
-		String[] nombresChicos = { "Juan", "Carlos", "Pedro", "Luis", "Andrés", "Sergio", "Miguel", "Pablo", "Antonio",
+		String[] nombresChicos = { "Juan", "Carlos", "Pedro", "Luis", "Andres", "Sergio", "Miguel", "Pablo", "Antonio",
 				"Javier" };
-		String[] nombresChicas = { "María", "Laura", "Ana", "Sofía", "Lucía", "Isabel", "Carmen", "Elena", "Raquel",
+		String[] nombresChicas = { "Maria", "Laura", "Ana", "Sofia", "Lucia", "Isabel", "Carmen", "Elena", "Raquel",
 				"Patricia" };
 
-		String[] materias = { "Matemáticas", "Filosofía", "Física" };
+		String[] materias = { "Matematicas", "Filosofia", "Fisica" };
 		
 		estudiantes = Estudiante.crearEstudiantes(nombresChicos, nombresChicas);
 

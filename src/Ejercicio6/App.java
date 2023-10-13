@@ -12,9 +12,9 @@ public class App {
 
 		System.out.println("\n**************** " + orange("CINES BOOTCAMP TEAM 4") + " *******************\n");
 
-		int filas = askValueNumeric("Cantidad de filas que tendrá la Sala: ");
+		int filas = askValueNumeric("Cantidad de filas de la Sala: ");
 
-		int columnas = askValueNumeric("Cantidad de columnas que tendrá la Sala: ");
+		int columnas = askValueNumeric("Cantidad de columnas de la Sala: ");
 
 		double precio = askPrice("Precio de la entrada al cine: ");
 

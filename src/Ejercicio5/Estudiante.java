@@ -30,7 +30,7 @@ class Estudiante extends Persona {
     }
     
     public String getCalificacionFormateada() {
-        // Redondear la calificación a 3 dígitos decimales
+        // Redondear la calificación a 3 digitos decimales
         double calificacionRedondeada = Math.round(calificacionActual * 1000.0) / 1000.0;
         return String.format("%.2f", calificacionRedondeada);
     }
