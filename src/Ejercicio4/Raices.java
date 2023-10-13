@@ -6,8 +6,7 @@ package Ejercicio4;
  * @author Robert Lopez & David Maza
  */
 public class Raices {
-    
-  
+
 	private double a;
 	private double b;
 	private double c;

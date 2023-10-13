@@ -1,6 +1,5 @@
 package Ejercicio5;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -14,6 +13,7 @@ import java.util.Random;
  * 
  * @author Jordi Mallafre
  */
+
 class Aula {
     private int identificador;
     private String materiaDestinada;
@@ -48,6 +48,8 @@ class Aula {
         estudiantes.add(estudiante);
     }
 
+
+
 	/**
 	 * Asigne un profesor al aula siempre que el profesor no sea nulo o que la
 	 * materia sea igual al valor de materiaDestinada
@@ -61,18 +63,21 @@ class Aula {
         }
     }
 
+
 	/**
 	 * Devuelve un true si el valor de profesor no sea nulo y lista de estudiantes
 	 * no este vacia
 	 * 
 	 * @return boolean
 	 */
+
     public boolean puedeDarseClase() {
         if (profesor != null && !estudiantes.isEmpty()) {
             return true;
         }
         return false;
     }
+
 
 	/**
 	 * Devuelve el total de estudiantes que sean del mismo sexo que el pasado por
@@ -133,9 +138,10 @@ class Aula {
     
 
 	/**
-	 * Muestra por consola toda la informaci�n de las aulas creadas
+	 * Muestra por consola toda la información de las aulas creadas
 	 * @param aulas
 	 */
+
     public static void mostrarAulas(ArrayList<Aula> aulas)
     {
     	for (Aula aula : aulas) {
@@ -148,6 +154,7 @@ class Aula {
     			System.out.println("---------------------------------------");
     			System.out.println("Estudiantes que asistieron:");
     			System.out.println("---------------------------------------");
+
 
     			for (Estudiante estudiante : aula.getEstudiantes()) {
     				System.out.println("Nombre: " + estudiante.getNombre());
@@ -168,5 +175,7 @@ class Aula {
     		}
     	}
     }
+
  }
-    
+
+

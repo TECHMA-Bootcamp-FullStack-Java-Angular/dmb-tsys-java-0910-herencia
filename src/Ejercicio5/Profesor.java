@@ -1,7 +1,5 @@
 package Ejercicio5;
 
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -28,19 +26,19 @@ class Profesor extends Persona {
 	}
 
 	/**
-	 * Devuelve si el profesor est� ausente o no.
+	 * Devuelve si el profesor está ausente o no.
 	 *
-	 * @return `true` si el profesor est� ausente, `false` si est� disponible
+	 * @return `true` si el profesor está ausente, `false` si está disponible
 	 */
 	public boolean faltar() {
 		return random.nextDouble() < 0.2 ? true : false;
 	}
 
 	/**
-	 * Crea una lista de profesores con un n�mero aleatorio de profesores por
+	 * Crea una lista de profesores con un número aleatorio de profesores por
 	 * materia.
 	 *
-	 * @param materias las materias para las que se crear�n profesores
+	 * @param materias las materias para las que se crearán profesores
 	 * @return una lista de profesores
 	 */
 	public static ArrayList<Profesor> crearProfesores(String[] materias) {
@@ -62,7 +60,7 @@ class Profesor extends Persona {
 	 * @param profesores la lista de profesores
 	 * @param materia    la materia para la que se busca un profesor disponible
 	 * @return el primer profesor disponible para la materia especificada, o `null`
-	 *         si no se encuentra ning�n profesor disponible
+	 *         si no se encuentra ningún profesor disponible
 	 */
 	public static Profesor obtenerProfesorDisponible(List<Profesor> profesores, String materia) {
 		return profesores.stream().filter(profesor -> profesor.getMateria().equals(materia)).findFirst().orElse(null);
