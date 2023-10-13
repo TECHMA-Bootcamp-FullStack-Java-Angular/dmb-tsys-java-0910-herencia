@@ -1,9 +1,19 @@
 package Ejercicio5;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Clase cre representa un Aula
+ * <li>int identificador
+ * <li>String materiaDestinada
+ * <li>List<Estudiante> estudiantes
+ * <li>Profesor profesor
+ * 
+ * @author Jordi Mallafre
+ */
 class Aula {
     private int identificador;
     private String materiaDestinada;
@@ -29,9 +39,21 @@ class Aula {
         return estudiantes;
     }
 
+	/**
+	 * Agrega el objeto estudiante pasado por parametro al arrayList de estudiantes
+	 * @param estudiante
+	 */
+
     public void agregarEstudiante(Estudiante estudiante) {
         estudiantes.add(estudiante);
     }
+
+	/**
+	 * Asigne un profesor al aula siempre que el profesor no sea nulo o que la
+	 * materia sea igual al valor de materiaDestinada
+	 * 
+	 * @param profesor
+	 */
 
     public void asignarProfessor(Profesor profesor) {
         if (profesor != null && profesor.getMateria().equals(materiaDestinada)) {
@@ -39,6 +61,12 @@ class Aula {
         }
     }
 
+	/**
+	 * Devuelve un true si el valor de profesor no sea nulo y lista de estudiantes
+	 * no este vacia
+	 * 
+	 * @return boolean
+	 */
     public boolean puedeDarseClase() {
         if (profesor != null && !estudiantes.isEmpty()) {
             return true;
@@ -46,7 +74,13 @@ class Aula {
         return false;
     }
 
-
+	/**
+	 * Devuelve el total de estudiantes que sean del mismo sexo que el pasado por
+	 * parametro y que esten aprobados
+	 * 
+	 * @param sexo
+	 * @return int
+	 */
     public int contarAprobados(String sexo) {
         int count = 0;
         for (Estudiante estudiante : estudiantes) {
@@ -60,7 +94,16 @@ class Aula {
     public int getIdentificador() {
         return identificador;
     }
-    
+
+	/**
+	 * A traves de dos bucles se generan varias aulas y se les asigna un profesor y estudiantes siempre que cumplan las condiciones 
+	 * 
+	 * @param materias
+	 * @param estudiantes
+	 * @param profesores
+	 * @return ArrayList<Aula>
+	 */
+
     public static ArrayList<Aula> crearAulas(String[] materias, ArrayList<Estudiante> estudiantes, ArrayList<Profesor> profesores)
     {
         Random random = new Random();
@@ -88,6 +131,11 @@ class Aula {
     	return aulas;
     }
     
+
+	/**
+	 * Muestra por consola toda la informaci�n de las aulas creadas
+	 * @param aulas
+	 */
     public static void mostrarAulas(ArrayList<Aula> aulas)
     {
     	for (Aula aula : aulas) {
@@ -120,5 +168,5 @@ class Aula {
     		}
     	}
     }
-
-}
+ }
+    

@@ -1,60 +1,70 @@
 package Ejercicio5;
 
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Clase repersenta a un profesor
+ * 
+ * <li>private String materia
+ * 
+ * @author David Maza
+ */
 class Profesor extends Persona {
-    private String materia;
-    private final Random RANDOM = new Random();
 
-    public Profesor(String nombre, int edad, String sexo, String materia) {
-        super(nombre, edad, sexo);
-        this.materia = materia;
-    }
+	private String materia;
+	static Random random = new Random();
 
-    public String getMateria() {
-        return materia;
-    }
+	public Profesor(String nombre, int edad, String sexo, String materia) {
+		super(nombre, edad, sexo);
+		this.materia = materia;
+	}
 
-    public boolean faltar() {
-        double probabilidad = RANDOM.nextDouble();
+	public String getMateria() {
+		return materia;
+	}
 
-        if (probabilidad < 0.2) {
-            return true; 
-        }
-        return false; 
-    }
-    
-    public static ArrayList<Profesor> crearProfesores(String[] materias)
-    {
-    	ArrayList<Profesor> profesores = new ArrayList<>();
-        Random random = new Random();
+	/**
+	 * Devuelve si el profesor est� ausente o no.
+	 *
+	 * @return `true` si el profesor est� ausente, `false` si est� disponible
+	 */
+	public boolean faltar() {
+		return random.nextDouble() < 0.2 ? true : false;
+	}
 
-        for (String materia : materias) {
-			String nombre = "Profesor " + materia;
-			int edad = 30 + random.nextInt(31); // Entre 30 y 60 años
-			String sexo = random.nextBoolean() ? "Hombre" : "Mujer";
-			Profesor profesor = new Profesor(nombre, edad, sexo, materia);
+	/**
+	 * Crea una lista de profesores con un n�mero aleatorio de profesores por
+	 * materia.
+	 *
+	 * @param materias las materias para las que se crear�n profesores
+	 * @return una lista de profesores
+	 */
+	public static ArrayList<Profesor> crearProfesores(String[] materias) {
+		ArrayList<Profesor> profesores = new ArrayList<>();
 
-			if (profesor.faltar()) {
-				System.out.println(profesor.getNombre() + " no está disponible.");
-			} else {
-				profesores.add(profesor);
-			}
-		}
-		
+		Arrays.stream(materias).forEach(e -> {
+
+			Profesor profesor = new Profesor("Profesor " + e, random.nextInt(31),random.nextBoolean() ? "Hombre" : "Mujer", e);
+			profesores.add(profesor.faltar() ? null : profesor);
+
+		});
+
 		return profesores;
-    }
-    
-    public static Profesor obtenerProfesorDisponible(List<Profesor> profesores, String materia) 
-    {
-		for (Profesor profesor : profesores) {
-			if (profesor.getMateria().equals(materia)) {
-				profesores.remove(profesor);
-				return profesor;
-			}
-		}
-		return null;
+	}
+
+	/**
+	 * Obtiene el primer profesor disponible para la materia especificada.
+	 *
+	 * @param profesores la lista de profesores
+	 * @param materia    la materia para la que se busca un profesor disponible
+	 * @return el primer profesor disponible para la materia especificada, o `null`
+	 *         si no se encuentra ning�n profesor disponible
+	 */
+	public static Profesor obtenerProfesorDisponible(List<Profesor> profesores, String materia) {
+		return profesores.stream().filter(profesor -> profesor.getMateria().equals(materia)).findFirst().orElse(null);
 	}
 }
