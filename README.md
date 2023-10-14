@@ -16,12 +16,12 @@ Puedes acceder a cada uno de los ejercicios haciendo clic en el siguiente enlace
 
 Repositorios 🖥️ | Diagramas 📅
 ------------- | -------------
-[Ejecicio 1](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio1)  | [Diagrama 1](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio1/docs/Ejercicio01.pdf)
-[Ejecicio 2](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio2)  | [Diagrama 2](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio2/docs/Actividad_02.pdf)
-[Ejecicio 3](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio3)  | [Diagrama 3]( https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio3/docs/libroClass.png)
-[Ejecicio 4](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio4)  | [Diagrama 4](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio4/docs/Actividad_04.pdf)
-[Ejecicio 5](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio5)  | [Diagrama 5](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio5/docs/diagrama_AulaEstudiante.png)
-[Ejecicio 6](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio6)  | [Diagrama 6](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio6/doc/Ejercicio6.pdf)
+[Ejercicio 1](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio1)  | [Diagrama 1](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio1/docs/Ejercicio01.pdf)
+[Ejercicio 2](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio2)  | [Diagrama 2](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio2/docs/Actividad_02.pdf)
+[Ejercicio 3](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio3)  | [Diagrama 3]( https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio3/docs/libroClass.png)
+[Ejercicio 4](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio4)  | [Diagrama 4](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio4/docs/Actividad_04.pdf)
+[Ejercicio 5](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio5)  | [Diagrama 5](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio5/docs/diagrama_AulaEstudiante.png)
+[Ejercicio 6](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/tree/main/src/Ejercicio6)  | [Diagrama 6](https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-0910-herencia/blob/main/src/Ejercicio6/doc/Ejercicio6.pdf)
 
 
 ## Nuestros consejos:
