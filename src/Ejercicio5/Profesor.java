@@ -27,19 +27,19 @@ class Profesor extends Persona {
 	}
 
 	/**
-	 * Devuelve si el profesor está ausente o no.
+	 * Devuelve si el profesor esta� ausente o no.
 	 *
-	 * @return `true` si el profesor está ausente, `false` si está disponible
+	 * @return `true` si el profesor esta� ausente, `false` si esta� disponible
 	 */
 	public boolean faltar() {
 		return random.nextDouble() < 0.2 ? true : false;
 	}
 
 	/**
-	 * Crea una lista de profesores con un número aleatorio de profesores por
+	 * Crea una lista de profesores con un numero aleatorio de profesores por
 	 * materia.
 	 *
-	 * @param materias las materias para las que se crearán profesores
+	 * @param materias las materias para las que se crearon profesores
 	 * @return una lista de profesores
 	 */
 	public static ArrayList<Profesor> crearProfesores(String[] materias) {
@@ -49,7 +49,6 @@ class Profesor extends Persona {
 
 			Profesor profesor = new Profesor("Profesor " + e, random.nextInt(31),random.nextBoolean() ? "Hombre" : "Mujer", e);
 			profesores.add(profesor.faltar() ? null : profesor);
-
 		});
 
 		return profesores;
@@ -59,9 +58,9 @@ class Profesor extends Persona {
 	 * Obtiene el primer profesor disponible para la materia especificada.
 	 *
 	 * @param profesores la lista de profesores
-	 * @param materia    la materia para la que se busca un profesor disponible
+	 * @param materia la materia para la que se busca un profesor disponible
 	 * @return el primer profesor disponible para la materia especificada, o `null`
-	 *         si no se encuentra ningún profesor disponible
+	 *         si no se encuentra ningun profesor disponible
 	 */
 	public static Profesor obtenerProfesorDisponible(List<Profesor> profesores, String materia) {
 		return profesores.stream().filter(profesor -> profesor.getMateria().equals(materia)).findFirst().orElse(null);

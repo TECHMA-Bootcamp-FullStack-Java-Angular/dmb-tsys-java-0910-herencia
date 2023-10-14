@@ -123,10 +123,11 @@ class Aula {
 				}
 				aula.agregarEstudiante(estudiante);
 			}
-
+			
 			// Asignar un profesor a esta aula si hay profesores disponibles para la materia
 			Profesor profesor = Profesor.obtenerProfesorDisponible(profesores, materias[i]);
-			aula.asignarProfessor(profesor);
+				aula.asignarProfessor(profesor);
+			
 
 			aulas.add(aula);
 		}
@@ -134,7 +135,7 @@ class Aula {
 	}
 
 	/**
-	 * Muestra por consola toda la informaciÃ³n de las aulas creadas
+	 * Muestra por consola toda la informaciónn de las aulas creadas
 	 * 
 	 * @param aulas
 	 */
