@@ -125,11 +125,14 @@ class Aula {
 			}
 			
 			// Asignar un profesor a esta aula si hay profesores disponibles para la materia
-			Profesor profesor = Profesor.obtenerProfesorDisponible(profesores, materias[i]);
+			try {
+				Profesor profesor = Profesor.obtenerProfesorDisponible(profesores, materias[i]);
 				aula.asignarProfessor(profesor);
+			} catch (Exception e) {
+				System.out.println("\nNo tenemos profesores diponible para " + materias[i]+"\n");
+			}
 			
-
-			aulas.add(aula);
+	      aulas.add(aula);
 		}
 		return aulas;
 	}
@@ -167,7 +170,7 @@ class Aula {
 
 				System.out.println();
 			} else {
-				System.out.println("No se puede dar clase en esta aula.");
+				System.out.println("No se puede dar clase de " + aula.materiaDestinada+  " en esta aula.");
 			}
 		}
 	}

@@ -46,7 +46,6 @@ class Profesor extends Persona {
 		ArrayList<Profesor> profesores = new ArrayList<>();
 
 		Arrays.stream(materias).forEach(e -> {
-
 			Profesor profesor = new Profesor("Profesor " + e, random.nextInt(31),random.nextBoolean() ? "Hombre" : "Mujer", e);
 			profesores.add(profesor.faltar() ? null : profesor);
 		});

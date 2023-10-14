@@ -24,6 +24,7 @@ public class App {
 		Collections.shuffle(estudiantes);
 		Collections.shuffle(profesores);
 
+		
 		aulas = Aula.crearAulas(materias, estudiantes, profesores);
 		
 		Aula.mostrarAulas(aulas);
