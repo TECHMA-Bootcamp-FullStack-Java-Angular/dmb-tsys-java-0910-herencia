@@ -1,4 +1,4 @@
-<div align="center"><img width="80%"  src="https://talento.edempleo.com/wp-content/uploads/2021/05/Fundacion_esplai.png"  alt="Logo BootCamp" /></div>
+<div align="center"><img width="80%"  src="https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-java-2010-ta15/blob/main/docs/logoDark.png?raw=true"  alt="Logo BootCamp" /></div>
 
 # BootCamp T-Systems
 
