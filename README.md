@@ -8,7 +8,7 @@
 
 ![My etiqueta](https://img.shields.io/badge/Jordi%20Mallafre-%20jordimall-orange)  ![My etiqueta](https://img.shields.io/badge/Roberto%20Lopez-%20robertiki2001-yellow) ![My etiqueta](https://img.shields.io/badge/David%20Maza-DiveCode-blue)
 
-## T9 - Herencia en JAVA  👨🏽‍👦🏻
+## TA9 - Herencia en JAVA  👨🏽‍👦🏻
 Este repositorio contiene las tareas del Bootcamp 👨‍💻
 
 
